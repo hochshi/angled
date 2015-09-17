@@ -46,7 +46,7 @@ angular.module('angled-windows.directives',['ngSanitize','ngAnimate','angled-dra
 						if(angular.isUndefined(scope.id)){
 							var loop = true;
 							while(loop){
-								var id = helperSrv.randomStr(10);
+								var id = helperSrv.randStr(10);
 								if(angular.element('#' + id).length == 0){
 									el.attr('id',id); // set attribute element id
 									scope.id = id; // set scope id
